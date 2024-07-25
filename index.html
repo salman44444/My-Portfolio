@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Salman Qurban </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Salman Qurban</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img class="profile_pic" src="./assets/profile_pic_mine.jpg" alt="Salman Qurban profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Salman Qurban</h1>
+        <p class="section__text__p2">Fresh CS Graduate</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('https://drive.google.com/file/d/1t-ehABUfUcwl0OdVfa_ZQ7JtbsOVwoGc/view?usp=sharing')"
+          >
+            Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/salman-q-3u6'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/salman44444'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/my_pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Backend Development <br/>Machine Learning </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hello, I'm Salman Qurban, a passionate and dedicated Computer Science graduate with a flair for full-stack development and a keen interest in machine learning and natural language processing. Welcome to my portfolio, where you can explore my projects, skills, and experiences that showcase my journey in the tech world.
+            </p>
+            <br>
+            <p>I recently graduated with a Bachelor's degree in Computer Science from Bahria University, Islamabad. With a strong foundation in both front-end and back-end technologies, I have developed a diverse skill set that enables me to build robust and dynamic web applications. My internship at RedBuffer provided me with valuable industry exposure and hands-on experience in full-stack development.
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                                 </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Flutter</h3>
+                                  </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical skills</h2>
+            <div class="article-container">
+           
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Flask</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Scikit-Learn</h3>
+                  
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Internships</h2>
+            <div class="article-container">
+            
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Full Stack Intern - Red Buffer</h3>
+                  
+                </div>
+              </article>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/projectre.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Final Year Project</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/salman44444/Authentify'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://drive.google.com/file/d/1tqxrzJHw7Qtq3dOlx0YnQo3Yzi0VJeAh/view?usp=drive_link'"
+              >
+                Report
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/sem.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">News App (Flutter)</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/salman44444/newsproject'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.canva.com/design/DAFlokZuwQs/UVrj4G6iP1VAniMNrTnjSw/edit?utm_content=DAFlokZuwQs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'"
+              >
+                Presentation
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/pngwing.com.png"
+                alt="Project 3"
+                class="project-img"
+              />
+              <h2 class="experience-sub-title project-title">Practice Projects for NLP Career Path</h2>
+  <div class="btn-container">
+    <button class="btn btn-color-2 project-btn" onclick="openPopup(event)">
+      View
+    </button>
+  </div>
+  
+  <div id="overlay" class="overlay" onclick="closePopup()"></div>
+
+  <div id="popup" class="popup">
+    <h3>Practice Project Titles</h3>
+    <ul>
+      <li>Project 1: Alienbot - Create a Python chatbot from another planet!</li>
+      <li>Project 2: Coffee Chatbot - Create a Python chatbot for ordering coffee!</li>
+      <li>Project 3: Echo Chatbot - Build your very first chatbot in Python using user input, output, and string concatenation.</li>
+      <li>Project 4: Cleaning US Census Data - Use your pandas and regex skills to clean up this dataset containing a bunch of census data collected by the US government.</li>
+      <li>Project 5: Exploring Student Data - Summarize the features of a dataset about student performance at two different schools.</li>
+      <li>Project 6: EDA: Diagnosing Diabetes - Inspect, clean, and validate a dataset on diabetes prevalence among females of Pima Indian heritage.</li>
+      <li>Project 7: Census Variables - Apply your knowledge of variable types to investigate, clean, and begin to analyze a sample of simulated census data.</li>
+      <li>Project 8: U.S.A. Presidential Vocabulary - Use word embeddings to analyze the inaugural addresses of the United States of America presidents.</li>
+      <li>Project 9: Read the News Analysis - Use tf-idf to analyze a collection of news articles.</li>
+      <li>Project 10: Mystery Friend - Use scikit-learn's bag-of-words functions and Naive Bayes classifier to figure out which of your friends sent you an anonymous postcard!</li>
+      <li>Project 11: Discover Insights into Classic Texts - Perform a natural language parsing analysis with regular expressions to gain insights into Oscar Wilde's _The Picture of Dorian Gray_ or Homer's _The Iliad!_</li>
+      <li>Project 12: Perceptron Logic Gates - Train Perceptrons to work like logic gates! This simple neuron can act as an AND or an OR gate.</li>
+      <li>Project 13: Email Similarity - Categorize emails using a Naive Bayes Classifier.</li>
+      <li>Project 14: Random Forests Project - Use random forests to predict the income of a person based on census data.</li>
+      <li>Project 15: Predict Baseball Strike Zones With Machine Learning - Calculate and visualize MLB player strike zones based on their real data.</li>
+      <li>Project 16: PCA Project - Use Principal Component Analysis (PCA) to transform features from telescope data to classify particles!</li>
+      <li>Project 17: Handwriting Recognition using K-Means - Use K-Means clustering and scikit-learn to cluster images of handwritten digits.</li>
+      <li>Project 18: Find the Flag! - Use decision trees to predict what continent a flag comes from based on features like color and shape.</li>
+      <li>Project 19: Cancer Classifier - Classify tumors as either malignant or benign using K-Nearest Neighbors.</li>
+      <li>Project 20: Predict Credit Card Fraud - Use Logistic Regression to predict credit card fraud.</li>
+      <li>Project 21: Tennis Ace - Create a linear regression model that predicts the outcome for a tennis player based on their playing habits.</li>
+      <li>Project 22: Honey Production - Fit a line to data about the honeybee population decline in the United States.</li>
+      <li>Project 23: Transforming Data into Features - Perform data transformations on a clothing company customer review dataset!</li>
+      <li>Project 24: Image Transformations with NumPy - Use NumPy and linear algebra knowledge to do fun image transformations!</li>
+      <li>Project 25: Chocolate Scraping with Beautiful Soup - Use BeautifulSoup to scrape a site that contains over 1700 expert ratings of different chocolate bars. Then, put the data you find into Pandas and analyze the results!</li>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="closePopup()">
+          Close
+        </button>
+         
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">salmanqurban36@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/salman-q-3u6">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Salman Qurban. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
