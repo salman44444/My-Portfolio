@@ -4,22 +4,132 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Salman</title>
+    <title>Salman Qurban — AI & Software Engineer</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TTCJRX9437"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <style>
+      /* ── Skills Overhaul ── */
+      .skills-grid-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+        width: 100%;
+        margin-top: 1rem;
+      }
+      .skill-category {
+        background: var(--button-background, #f9f9f9);
+        border: 1.5px solid var(--border-color, #ddd);
+        border-radius: 12px;
+        padding: 1.25rem 1.5rem;
+      }
+      .skill-category h3 {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: #888;
+        margin-bottom: 0.85rem;
+        font-weight: 600;
+      }
+      .skill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.45rem;
+      }
+      .skill-tag {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 999px;
+        padding: 0.25rem 0.75rem;
+        font-size: 0.78rem;
+        font-weight: 500;
+        color: #333;
+        white-space: nowrap;
+      }
 
-  gtag('config', 'G-TTCJRX9437');
-</script>
+      /* ── Project Cards Enhancement ── */
+      .project-description {
+        font-size: 0.85rem;
+        color: #555;
+        text-align: left;
+        padding: 0 0.5rem;
+        margin: 0.5rem 0 0.75rem;
+        line-height: 1.5;
+      }
+      .project-tech-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        justify-content: center;
+        margin-bottom: 0.75rem;
+      }
+      .project-tech-tag {
+        background: rgba(0,0,0,0.06);
+        border-radius: 999px;
+        padding: 0.2rem 0.6rem;
+        font-size: 0.72rem;
+        font-weight: 500;
+        color: #444;
+      }
+      .project-live-badge {
+        display: inline-block;
+        background: #22c55e;
+        color: #fff;
+        font-size: 0.7rem;
+        font-weight: 700;
+        padding: 0.15rem 0.6rem;
+        border-radius: 999px;
+        letter-spacing: 0.05em;
+        margin-bottom: 0.4rem;
+      }
+
+      /* ── Experience metric pills ── */
+      .metric-pills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        margin-top: 0.6rem;
+      }
+      .metric-pill {
+        background: #e8f5e9;
+        color: #2e7d32;
+        border-radius: 999px;
+        padding: 0.2rem 0.65rem;
+        font-size: 0.73rem;
+        font-weight: 600;
+      }
+
+      /* ── About stat boxes ── */
+      .stat-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.2rem;
+      }
+      .stat-number {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #333;
+      }
+      .stat-label {
+        font-size: 0.75rem;
+        color: #777;
+        text-align: center;
+      }
+
+      /* ── Footer year fix ── */
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTCJRX9437"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-TTCJRX9437');
+    </script>
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">Salman Qurban </div>
+      <div class="logo">Salman Qurban</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -45,6 +155,8 @@
         </div>
       </div>
     </nav>
+
+    <!-- ── HERO ── -->
     <section id="profile">
       <div class="section__pic-container">
         <img class="profile_pic" src="./assets/profile_pic_mine.jpg" alt="Salman Qurban profile picture" />
@@ -53,11 +165,11 @@
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Salman Qurban</h1>
         <p class="section__text__p2">AI & Software Engineer</p>
-        <p class="section__text__p3">Reisterstown, MD</p>
+        <p class="section__text__p3">Reisterstown, MD &nbsp;·&nbsp; U.S. Permanent Resident</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('https://drive.google.com/file/d/14GwGp3TmUH8cETk-xy-__ge3Bh4ajrBc/view?usp=sharing')"
+            onclick="window.open('https://drive.google.com/file/d/1GzF96ihj9JWIdFENcVuBWJy0qM4bmBTH/view?usp=drive_link')"
           >
             Resume
           </button>
@@ -81,270 +193,266 @@
         </div>
       </div>
     </section>
+
+    <!-- ── ABOUT ── -->
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
-          <img
-            src="./assets/my_pic.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
+          <img src="./assets/my_pic.jpg" alt="Profile picture" class="about-pic" />
         </div>
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
               <h3>Experience</h3>
-              <p>Backend Development <br/>Machine Learning </p>
+              <p>AI/ML Engineering<br />Backend Development</p>
             </div>
             <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
               <h3>Education</h3>
-              <p>Bachelors of Science in Computer Science</p>
+              <p>B.S. Computer Science<br />NLP Specialist (Codecademy)</p>
+            </div>
+          </div>
+          <!-- Quick stats row -->
+          <div class="about-containers" style="margin-top: 0.75rem;">
+            <div class="details-container stat-box">
+              <span class="stat-number">8M+</span>
+              <span class="stat-label">Pages indexed in production RAG system</span>
+            </div>
+            <div class="details-container stat-box">
+              <span class="stat-number">85%</span>
+              <span class="stat-label">Reduction in legal document review time</span>
+            </div>
+            <div class="details-container stat-box">
+              <span class="stat-number">90%</span>
+              <span class="stat-label">Research efficiency improvement</span>
             </div>
           </div>
           <div class="text-container">
             <p>
-             I am an AI & Software Engineer specializing in building sophisticated, production-grade AI platforms. My recent work involves architecting massive-scale RAG systems for millions of documents and engineering multi-stage AI pipelines using LangGraph and Gemini 2.0. I bridge the gap between complex Machine Learning research and robust Backend Engineering to create tools that solve real-world legal and scholarly challenges.
+              I'm an AI & Software Engineer specializing in production-grade AI systems. At Neural Lines I architected
+              <strong>ShamelaGPT</strong> — a live RAG system serving queries over 8 million pages of Arabic literature — and built
+              <strong>AI Legal Document Management System</strong>, an agentic LangGraph pipeline that cut legal document review time by 85% for Hong Kong barristers.
+              I bridge ML research and backend engineering to ship tools that work in the real world.
             </p>
-            <br>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
     </section>
+
+    <!-- ── EXPERIENCE ── -->
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
 
-
+      <!-- Work Experience -->
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
             <h2 class="experience-sub-title">Python Engineer</h2>
             <h3 style="margin-bottom: 0.5rem">Neural Lines</h3>
-            <p style="margin-bottom: 1rem">Feb 2025 - Nov 2025</p>
+            <p style="margin-bottom: 1rem">Feb 2025 – Nov 2025 &nbsp;·&nbsp; Remote</p>
             <div style="text-align: left; padding: 0 1rem">
               <ul>
-                <li><strong>Chronoscript:</strong> Developed an AI platform for legal analytics that generates automated case timelines from complex filings.</li>
-                <li><strong>ShamelaGPT:</strong> Architected a RAG system for 8 million pages of Arabic literature, utilizing AraBERT and Pinecone for high-accuracy retrieval.</li>
-                <li><strong>Tech:</strong> FastAPI, Gemini 2.0, LangChain, LangGraph, AWS Textract, PostgreSQL.</li>
+                <li>
+                  Engineered an agentic LangGraph pipeline for an <strong>AI-powered legal document management system</strong>,
+                  automating document review and case timeline generation — reducing manual review time by 85% (2–3 weeks to 2–3 days).
+                </li>
+                <li>
+                  Built intelligent document processing using AWS Textract and Tesseract OCR to parse and segment
+                  1,000+ page legal bundles into context-specific sub-documents, achieving 90% timeline accuracy
+                  improvement with automated dispute detection.
+                </li>
+                <li>
+                  Developed a conversational AI assistant for real-time case analysis with smart document mapping,
+                  increasing lawyer productivity by 70% by eliminating manual document organization.
+                </li>
+                <li>
+                  Architected and deployed <strong>ShamelaGPT (<a href="https://shamelagpt.com" target="_blank" rel="noopener">shamelagpt.com</a>)</strong>,
+                  a production RAG system over 8 million pages of Arabic Islamic literature using AraBERT and Pinecone,
+                  improving research efficiency by 90%.
+                </li>
+                <li>
+                  Enabled multilingual semantic search and cross-lingual Q&amp;A across thousands of Islamic scholarly
+                  texts via Gemini 2.0 Flash, serving students and researchers globally.
+                </li>
+                <li><strong>Tech:</strong> FastAPI, LangChain, LangGraph, LangSmith, AWS (Textract, S3), PostgreSQL, Alembic, AraBERT, Pinecone, Gemini 2.0 Flash.</li>
               </ul>
+              <div class="metric-pills">
+                <span class="metric-pill">↓ 85% review time</span>
+                <span class="metric-pill">↑ 90% timeline accuracy</span>
+                <span class="metric-pill">↑ 70% lawyer productivity</span>
+                <span class="metric-pill">↑ 90% research efficiency</span>
+                <span class="metric-pill">Live in production</span>
+              </div>
             </div>
           </div>
           <div class="details-container">
             <h2 class="experience-sub-title">Software Engineering Fellow</h2>
             <h3 style="margin-bottom: 0.5rem">HeadStarter</h3>
-            <p style="margin-bottom: 1rem">July 2024 – Sept 2024</p>
+            <p style="margin-bottom: 1rem">July 2024 – Sept 2024 &nbsp;·&nbsp; Remote</p>
             <div style="text-align: left; padding: 0 1rem">
               <ul>
-                <li>Built an AI-driven medical symptom-checker using Llama and sentence transformers.</li>
-                <li>Developed a full-stack spaced repetition flashcard app with AI-generated content.</li>
+                <li>Shipped 5 AI-powered projects in 7 weeks including a medical symptom-checking chatbot (sentence transformers + Pinecone + Llama), a spaced repetition flashcard app with AI-generated cards, and a pantry tracker with inventory intelligence.</li>
+                <li>Competed in virtual hackathons forming cross-functional teams globally, delivering scoped AI products under tight deadlines.</li>
+                <li>Attended workshops led by engineers from Google, Meta, and Amazon on scalable system design and AI product development.</li>
+                <li><strong>Tech:</strong> Next.js, LangChain, Pinecone, Llama, OpenRouter API.</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Technical Skills</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                
+      <!-- Skills — Redesigned -->
+      <div class="experience-details-container" style="margin-top: 2rem;">
+        <div class="about-containers" style="flex-direction: column; align-items: stretch;">
+          <div class="details-container" style="width: 100%;">
+            <h2 class="experience-sub-title" style="margin-bottom: 1.25rem;">Technical Skills</h2>
+            <div class="skills-grid-wrapper">
+              <div class="skill-category">
+                <h3>AI / ML</h3>
+                <div class="skill-tags">
+                  <span class="skill-tag">LangChain</span>
+                  <span class="skill-tag">LangGraph</span>
+                  <span class="skill-tag">LangSmith</span>
+                  <span class="skill-tag">RAG Pipelines</span>
+                  <span class="skill-tag">AraBERT</span>
+                  <span class="skill-tag">Pinecone</span>
+                  <span class="skill-tag">Scikit-Learn</span>
+                  <span class="skill-tag">NLTK</span>
+                  <span class="skill-tag">Sentence Transformers</span>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  
+              </div>
+              <div class="skill-category">
+                <h3>Backend &amp; Cloud</h3>
+                <div class="skill-tags">
+                  <span class="skill-tag">FastAPI</span>
+                  <span class="skill-tag">PostgreSQL</span>
+                  <span class="skill-tag">Alembic</span>
+                  <span class="skill-tag">AWS Textract</span>
+                  <span class="skill-tag">AWS S3</span>
+                  <span class="skill-tag">Docker</span>
+                  <span class="skill-tag">Express.js</span>
+                  <span class="skill-tag">Node.js</span>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React</h3>
-                  
+              </div>
+              <div class="skill-category">
+                <h3>Languages</h3>
+                <div class="skill-tags">
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">JavaScript</span>
+                  <span class="skill-tag">SQL</span>
+                  <span class="skill-tag">C++</span>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Flutter</h3>
-                                  </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                
+              </div>
+              <div class="skill-category">
+                <h3>Frontend &amp; Mobile</h3>
+                <div class="skill-tags">
+                  <span class="skill-tag">React</span>
+                  <span class="skill-tag">Next.js</span>
+                  <span class="skill-tag">Flutter</span>
+                  <span class="skill-tag">HTML / CSS</span>
                 </div>
-              </article>
+              </div>
+              <div class="skill-category">
+                <h3>Tools</h3>
+                <div class="skill-tags">
+                  <span class="skill-tag">Git</span>
+                  <span class="skill-tag">Postman</span>
+                  <span class="skill-tag">Tesseract OCR</span>
+                  <span class="skill-tag">Selenium</span>
+                  <span class="skill-tag">BeautifulSoup</span>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Technical skills</h2>
-            <div class="article-container">
-           
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Flask</h3>
-                  
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Scikit-Learn</h3>
-                  
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Internships</h2>
-            <div class="article-container">
-            
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Full Stack Intern - Red Buffer</h3>
-                  
-                </div>
-              </article>
-            </div>
-          </div>
-        
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
     </section>
+
+    <!-- ── PROJECTS ── -->
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
+
+          <!-- AI Legal Document Management System -->
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">AI Legal Document Management</h2>
+            <p style="font-size:0.78rem; color:#777; margin-bottom:0.4rem;">Agentic AI Pipeline · Neural Lines</p>
+            <p class="project-description">
+              LangGraph-powered system that automates legal document review, generates case timelines, and detects
+              disputed events for a major law firm. Reduced manual review time by 85% (2–3 weeks → 2–3 days),
+              improved timeline accuracy by 90%, and boosted lawyer productivity by 70%.
+            </p>
+            <div class="project-tech-tags">
+              <span class="project-tech-tag">LangGraph</span>
+              <span class="project-tech-tag">FastAPI</span>
+              <span class="project-tech-tag">AWS Textract</span>
+              <span class="project-tech-tag">PostgreSQL</span>
+              <span class="project-tech-tag">LangSmith</span>
+              <span class="project-tech-tag">Gemini 2.0</span>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" disabled style="opacity:0.5; cursor:not-allowed;">
+                Private Codebase
+              </button>
+            </div>
+          </div>
+
+          <!-- ShamelaGPT -->
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/projectre.jpg"
-                alt="Project 1"
-                class="project-img"
-              />
+              <img src="./assets/main_logo_without_text.jpeg" alt="ShamelaGPT" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Final Year Project</h2>
+            <span class="project-live-badge">● Live</span>
+            <h2 class="experience-sub-title project-title">ShamelaGPT</h2>
+            <p style="font-size:0.78rem; color:#777; margin-bottom:0.4rem;">Arabic Literature RAG System · Neural Lines</p>
+            <p class="project-description">
+              Production RAG system over 8 million pages of the Shamela digital library. Supports multilingual
+              scholarly queries using AraBERT embeddings and Pinecone vector search, improving research
+              efficiency by 90%.
+            </p>
+            <div class="project-tech-tags">
+              <span class="project-tech-tag">AraBERT</span>
+              <span class="project-tech-tag">Pinecone</span>
+              <span class="project-tech-tag">LangChain</span>
+              <span class="project-tech-tag">FastAPI</span>
+              <span class="project-tech-tag">Gemini 2.0 Flash</span>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://shamelagpt.com', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <!-- Final Year Project -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/projectre.jpg" alt="Hotel Recommendation System" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Hotel Recommendation System</h2>
+            <p style="font-size:0.78rem; color:#777; margin-bottom:0.4rem;">Final Year Project · Bahria University</p>
+            <p class="project-description">
+              Sentiment-aware recommendation engine trained on 10,000+ scraped reviews using Selenium,
+              BeautifulSoup, and NLTK for sentiment extraction and scoring.
+            </p>
+            <div class="project-tech-tags">
+              <span class="project-tech-tag">Python</span>
+              <span class="project-tech-tag">NLTK</span>
+              <span class="project-tech-tag">Selenium</span>
+              <span class="project-tech-tag">BeautifulSoup</span>
+            </div>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -360,15 +468,23 @@
               </button>
             </div>
           </div>
+
+          <!-- News App -->
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/sem.jpg"
-                alt="Project 2"
-                class="project-img"
-              />
+              <img src="./assets/sem.jpg" alt="News App" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">News App (Flutter)</h2>
+            <h2 class="experience-sub-title project-title">News &amp; Media Apps</h2>
+            <p style="font-size:0.78rem; color:#777; margin-bottom:0.4rem;">Cross-platform Mobile · Flutter</p>
+            <p class="project-description">
+              Cross-platform mobile apps built in Flutter with real-time REST API integrations for live
+              news delivery and media streaming.
+            </p>
+            <div class="project-tech-tags">
+              <span class="project-tech-tag">Flutter</span>
+              <span class="project-tech-tag">REST APIs</span>
+              <span class="project-tech-tag">Dart</span>
+            </div>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -376,96 +492,34 @@
               >
                 Github
               </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.canva.com/design/DAFlokZuwQs/UVrj4G6iP1VAniMNrTnjSw/edit?utm_content=DAFlokZuwQs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'"
-              >
-                Presentation
-              </button>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/pngwing.com.png"
-                alt="Project 3"
-                class="project-img"
-              />
-              <h2 class="experience-sub-title project-title">Practice Projects for NLP Career Path</h2>
-  <div class="btn-container">
-    <button class="btn btn-color-2 project-btn" onclick="openPopup(event)">
-      View
-    </button>
-  </div>
-  
-  <div id="overlay" class="overlay" onclick="closePopup()"></div>
 
-  <div id="popup" class="popup">
-    <h3>Practice Project Titles</h3>
-    <ul>
-      <li>Project 1: Alienbot - Create a Python chatbot from another planet!</li>
-      <li>Project 2: Coffee Chatbot - Create a Python chatbot for ordering coffee!</li>
-      <li>Project 3: Echo Chatbot - Build your very first chatbot in Python using user input, output, and string concatenation.</li>
-      <li>Project 4: Cleaning US Census Data - Use your pandas and regex skills to clean up this dataset containing a bunch of census data collected by the US government.</li>
-      <li>Project 5: Exploring Student Data - Summarize the features of a dataset about student performance at two different schools.</li>
-      <li>Project 6: EDA: Diagnosing Diabetes - Inspect, clean, and validate a dataset on diabetes prevalence among females of Pima Indian heritage.</li>
-      <li>Project 7: Census Variables - Apply your knowledge of variable types to investigate, clean, and begin to analyze a sample of simulated census data.</li>
-      <li>Project 8: U.S.A. Presidential Vocabulary - Use word embeddings to analyze the inaugural addresses of the United States of America presidents.</li>
-      <li>Project 9: Read the News Analysis - Use tf-idf to analyze a collection of news articles.</li>
-      <li>Project 10: Mystery Friend - Use scikit-learn's bag-of-words functions and Naive Bayes classifier to figure out which of your friends sent you an anonymous postcard!</li>
-      <li>Project 11: Discover Insights into Classic Texts - Perform a natural language parsing analysis with regular expressions to gain insights into Oscar Wilde's _The Picture of Dorian Gray_ or Homer's _The Iliad!_</li>
-      <li>Project 12: Perceptron Logic Gates - Train Perceptrons to work like logic gates! This simple neuron can act as an AND or an OR gate.</li>
-      <li>Project 13: Email Similarity - Categorize emails using a Naive Bayes Classifier.</li>
-      <li>Project 14: Random Forests Project - Use random forests to predict the income of a person based on census data.</li>
-      <li>Project 15: Predict Baseball Strike Zones With Machine Learning - Calculate and visualize MLB player strike zones based on their real data.</li>
-      <li>Project 16: PCA Project - Use Principal Component Analysis (PCA) to transform features from telescope data to classify particles!</li>
-      <li>Project 17: Handwriting Recognition using K-Means - Use K-Means clustering and scikit-learn to cluster images of handwritten digits.</li>
-      <li>Project 18: Find the Flag! - Use decision trees to predict what continent a flag comes from based on features like color and shape.</li>
-      <li>Project 19: Cancer Classifier - Classify tumors as either malignant or benign using K-Nearest Neighbors.</li>
-      <li>Project 20: Predict Credit Card Fraud - Use Logistic Regression to predict credit card fraud.</li>
-      <li>Project 21: Tennis Ace - Create a linear regression model that predicts the outcome for a tennis player based on their playing habits.</li>
-      <li>Project 22: Honey Production - Fit a line to data about the honeybee population decline in the United States.</li>
-      <li>Project 23: Transforming Data into Features - Perform data transformations on a clothing company customer review dataset!</li>
-      <li>Project 24: Image Transformations with NumPy - Use NumPy and linear algebra knowledge to do fun image transformations!</li>
-      <li>Project 25: Chocolate Scraping with Beautiful Soup - Use BeautifulSoup to scrape a site that contains over 1700 expert ratings of different chocolate bars. Then, put the data you find into Pandas and analyze the results!</li>
-      <div class="btn-container">
-        <button class="btn btn-color-2 project-btn" onclick="closePopup()">
-          Close
-        </button>
-         
-            </div>
-          </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
     </section>
+
+    <!-- ── CONTACT ── -->
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">salmanqurban36@gmail.com</a></p>
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="/cdn-cgi/l/email-protection#780b1914151916090d0a1a19164b4e381f15191114561b1715"><span class="__cf_email__" data-cfemail="0675676a6b6768777374646768353046616b676f6a2865696b">[email&#160;protected]</span></a></p>
         </div>
         <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/salman-q-3u6">LinkedIn</a></p>
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/salman-q-3u6" target="_blank" rel="noopener">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/github.png" alt="GitHub icon" class="icon contact-icon" />
+          <p><a href="https://github.com/salman44444" target="_blank" rel="noopener">GitHub</a></p>
         </div>
       </div>
     </section>
+
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -476,9 +530,4 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-      </nav>
-      <p>Copyright &#169; 2024 Salman Qurban. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
-</html>
+      </n
