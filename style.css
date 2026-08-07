@@ -150,7 +150,8 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
+  padding-bottom: 4vh;
+  height: auto;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -270,20 +271,32 @@ border-radius: 50%;
   position: relative;
 }
 
-.about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+#about .section-container {
+  align-items: center;
+  gap: 3rem;
 }
 
-.about-details-container {
+#about .about-containers {
+  gap: 1.25rem;
+  margin: 1.25rem 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#about .about-details-container {
   justify-content: center;
   flex-direction: column;
+  flex: 1;
+  min-width: 0;
 }
 
 .about-containers,
 .about-details-container {
   display: flex;
+}
+
+.about-containers {
+  gap: 2rem;
 }
 
 .about-pic {
@@ -298,7 +311,7 @@ border-radius: 50%;
 
 .details-container {
   padding: 1.5rem;
-  flex: 1;
+  flex: 1 1 220px;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
