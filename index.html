@@ -384,6 +384,80 @@
       <div class="experience-details-container">
         <div class="about-containers">
 
+          <!-- CNC Failure Lab -->
+          <article class="details-container color-container featured-project-card">
+            <div class="featured-project-layout">
+              <figure class="project-screenshot project-screenshot-main">
+                <img
+                  src="./assets/cnc-failure-lab-dashboard-fresh.jpg"
+                  alt="CNC Failure Lab dashboard showing three simulated machines, sensor trends, telemetry history, and maintenance alerts"
+                />
+                <figcaption>Live telemetry dashboard and stop-on-failure simulation</figcaption>
+              </figure>
+
+              <div class="featured-project-copy">
+                <span class="project-featured-badge">Featured AI Demo</span>
+                <h2 class="experience-sub-title project-title">CNC Failure Lab</h2>
+                <p class="project-eyebrow">Predictive Maintenance · Full-Stack AI</p>
+                <p class="project-description">
+                  Interactive demo that replays the synthetic AI4I 2020 dataset across three CNC machines, streams
+                  telemetry every second, and stops each machine at its first labeled failure. A LangGraph workflow
+                  combines the final sensor window with three Pinecone-indexed manuals to generate a grounded
+                  diagnosis and corrective-action plan.
+                </p>
+                <div class="project-proof-points" aria-label="Project highlights">
+                  <span><strong>3</strong> CNC streams</span>
+                  <span><strong>1 sec</strong> telemetry</span>
+                  <span><strong>~9 sec</strong> AI diagnosis</span>
+                </div>
+                <div class="project-tech-tags">
+                  <span class="project-tech-tag">React</span>
+                  <span class="project-tech-tag">TypeScript</span>
+                  <span class="project-tech-tag">FastAPI</span>
+                  <span class="project-tech-tag">WebSockets</span>
+                  <span class="project-tech-tag">LangGraph</span>
+                  <span class="project-tech-tag">Pinecone</span>
+                  <span class="project-tech-tag">PostgreSQL</span>
+                  <span class="project-tech-tag">Docker</span>
+                </div>
+                <div class="btn-container featured-project-actions">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="window.open('https://github.com/salman44444/factory-ai-dashboard', '_blank', 'noopener')"
+                  >
+                    View on GitHub
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="project-detail-gallery" aria-label="CNC Failure Lab feature screenshots">
+              <figure class="project-screenshot">
+                <img
+                  src="./assets/cnc-failure-lab-telemetry-fresh.jpg"
+                  alt="Live CNC telemetry history showing final readings before failure, playback controls, and maintenance alerts"
+                  loading="lazy"
+                />
+                <figcaption>Failure replay, final telemetry readings, and alert review workflow</figcaption>
+              </figure>
+              <figure class="project-screenshot">
+                <img
+                  src="./assets/cnc-failure-lab-diagnosis-fresh.jpg"
+                  alt="AI maintenance diagnosis showing root-cause analysis, manual cross-references, and corrective actions"
+                  loading="lazy"
+                />
+                <figcaption>Manual-grounded diagnosis and corrective-action plan</figcaption>
+              </figure>
+              <figure class="project-screenshot">
+                <img
+                  src="./assets/cnc-failure-lab-agent-flow-fresh.jpg"
+                  alt="LangGraph retrieval flow showing PostgreSQL telemetry, three Pinecone manual retrievers, and Gemini synthesis"
+                  loading="lazy"
+                />
+                <figcaption>LangGraph retrieval flow and transparent agent inspector</figcaption>
+              </figure>
+            </div>
+          </article>
+
           <!-- AI Legal Document Management System -->
           <div class="details-container color-container">
             <h2 class="experience-sub-title project-title">AI Legal Document Management</h2>

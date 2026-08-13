@@ -310,6 +310,7 @@ border-radius: 50%;
 }
 
 .details-container {
+  box-sizing: border-box;
   padding: 1.5rem;
   flex: 1 1 220px;
   background: white;
@@ -395,6 +396,349 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+}
+
+.featured-project-card {
+  display: block;
+  width: 100%;
+  flex: 1 1 100%;
+  padding: 1.25rem;
+  overflow: hidden;
+}
+
+.featured-project-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(300px, 0.88fr);
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+}
+
+.featured-project-copy {
+  text-align: left;
+  padding: 0.5rem 0.75rem 0.5rem 0;
+}
+
+.featured-project-copy .project-title {
+  margin: 0.45rem 0 0.15rem;
+  text-align: left;
+}
+
+.featured-project-copy .project-description {
+  padding: 0;
+  margin: 0.75rem 0 1rem;
+}
+
+.project-featured-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  background: #111827;
+  color: #fff;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.project-eyebrow {
+  color: #6b7280;
+  font-size: 0.78rem;
+}
+
+.project-proof-points {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.55rem;
+  margin: 0 0 1rem;
+}
+
+.project-proof-points span {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  border: 1px solid #dfe3ea;
+  border-radius: 0.8rem;
+  background: #fff;
+  padding: 0.65rem 0.5rem;
+  color: #6b7280;
+  font-size: 0.68rem;
+  text-align: center;
+}
+
+.project-proof-points strong {
+  color: #111827;
+  font-size: 0.95rem;
+}
+
+.featured-project-copy .project-tech-tags {
+  justify-content: flex-start;
+}
+
+.featured-project-actions {
+  justify-content: flex-start;
+  margin-bottom: 0;
+}
+
+.featured-project-actions .btn {
+  width: auto;
+  min-width: 10rem;
+}
+
+.project-screenshot {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #d9dde5;
+  border-radius: 1.15rem;
+  background: #090d16;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.16);
+}
+
+.project-screenshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-screenshot-main img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.project-screenshot figcaption {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.7rem 0.9rem;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.7rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.project-detail-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.project-detail-gallery .project-screenshot {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+}
+
+.project-detail-gallery .project-screenshot img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cnc-project-visual {
+  min-height: 360px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 1.4rem;
+  background:
+    radial-gradient(circle at 14% 12%, rgba(0, 122, 255, 0.24), transparent 34%),
+    radial-gradient(circle at 88% 88%, rgba(175, 82, 222, 0.2), transparent 34%),
+    #090d16;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.2);
+  color: #fff;
+  padding: 1.15rem;
+  text-align: left;
+}
+
+.cnc-preview-header,
+.cnc-machine-row,
+.cnc-ai-status,
+.cnc-chart-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cnc-preview-header {
+  gap: 1rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cnc-preview-title,
+.cnc-preview-subtitle {
+  display: block;
+}
+
+.cnc-preview-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.cnc-preview-subtitle {
+  margin-top: 0.1rem;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.cnc-preview-connection {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #72e6a2;
+  font-size: 0.65rem;
+  white-space: nowrap;
+}
+
+.cnc-preview-connection i {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: #30d158;
+  box-shadow: 0 0 0.7rem rgba(48, 209, 88, 0.7);
+}
+
+.cnc-machine-row {
+  gap: 0.55rem;
+  margin: 1rem 0;
+}
+
+.cnc-machine-chip {
+  flex: 1;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.045);
+  padding: 0.65rem;
+}
+
+.cnc-machine-chip span,
+.cnc-machine-chip strong {
+  display: block;
+}
+
+.cnc-machine-chip span {
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.cnc-machine-chip strong {
+  margin-top: 0.2rem;
+  font-size: 0.52rem;
+  letter-spacing: 0.08em;
+}
+
+.cnc-machine-chip.running strong { color: #30d158; }
+.cnc-machine-chip.warning strong { color: #ffb340; }
+.cnc-machine-chip.failed strong { color: #ff6961; }
+
+.cnc-chart-shell {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.85rem;
+  background: rgba(255, 255, 255, 0.025);
+  padding: 0.7rem 0.8rem 0.25rem;
+}
+
+.cnc-chart-label {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.54rem;
+  letter-spacing: 0.08em;
+}
+
+.cnc-chart-shell svg {
+  display: block;
+  width: 100%;
+  height: 145px;
+  margin-top: 0.3rem;
+  overflow: visible;
+}
+
+.cnc-grid-lines line {
+  stroke: rgba(255, 255, 255, 0.07);
+  stroke-width: 1;
+}
+
+.cnc-area { fill: url(#rpmArea); }
+.cnc-rpm-line,
+.cnc-torque-line {
+  fill: none;
+  stroke-linecap: round;
+  stroke-width: 4;
+}
+.cnc-rpm-line { stroke: #64d2ff; }
+.cnc-torque-line { stroke: #bf5af2; }
+.cnc-failure-point {
+  fill: #ff453a;
+  stroke: rgba(255, 255, 255, 0.85);
+  stroke-width: 3;
+}
+
+.cnc-ai-status {
+  gap: 1rem;
+  margin-top: 0.75rem;
+  border: 1px solid rgba(191, 90, 242, 0.24);
+  border-radius: 0.7rem;
+  background: rgba(191, 90, 242, 0.08);
+  padding: 0.65rem 0.75rem;
+  font-size: 0.62rem;
+}
+
+.cnc-ai-status span { color: #d6a8ef; }
+.cnc-ai-status strong {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.58rem;
+  text-align: right;
+}
+
+@media screen and (max-width: 900px) {
+  .featured-project-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-project-copy {
+    padding: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .featured-project-card {
+    padding: 0.75rem;
+  }
+
+  .cnc-project-visual {
+    min-height: auto;
+    padding: 0.8rem;
+  }
+
+  .cnc-preview-connection {
+    display: none;
+  }
+
+  .cnc-machine-row {
+    gap: 0.35rem;
+  }
+
+  .cnc-machine-chip {
+    padding: 0.5rem 0.35rem;
+  }
+
+  .cnc-chart-shell svg {
+    height: 105px;
+  }
+
+  .project-proof-points {
+    grid-template-columns: 1fr;
+  }
+
+  .project-detail-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .project-detail-gallery .project-screenshot img {
+    height: auto;
+    max-height: 480px;
+  }
 }
 
 .btn-container {
