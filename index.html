@@ -1,124 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Salman Qurban — Software Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Salman Qurban is an AI and software engineer building production RAG systems, agentic workflows, and dependable backend products."
+    />
+    <meta name="theme-color" content="#10110f" />
+    <meta property="og:title" content="Salman Qurban — AI & Software Engineer" />
+    <meta
+      property="og:description"
+      content="Production AI systems, agentic workflows, and full-stack engineering."
+    />
+    <meta property="og:type" content="website" />
+    <title>Salman Qurban — AI &amp; Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <style>
-      /* ── Skills Overhaul ── */
-      .skills-grid-wrapper {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 1.5rem;
-        width: 100%;
-        margin-top: 1rem;
-      }
-      .skill-category {
-        background: var(--button-background, #f9f9f9);
-        border: 1.5px solid var(--border-color, #ddd);
-        border-radius: 12px;
-        padding: 1.25rem 1.5rem;
-      }
-      .skill-category h3 {
-        font-size: 0.8rem;
-        text-transform: uppercase;
-        letter-spacing: 0.12em;
-        color: #888;
-        margin-bottom: 0.85rem;
-        font-weight: 600;
-      }
-      .skill-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.45rem;
-      }
-      .skill-tag {
-        background: #fff;
-        border: 1px solid #ddd;
-        border-radius: 999px;
-        padding: 0.25rem 0.75rem;
-        font-size: 0.78rem;
-        font-weight: 500;
-        color: #333;
-        white-space: nowrap;
-      }
-
-      /* ── Project Cards Enhancement ── */
-      .project-description {
-        font-size: 0.85rem;
-        color: #555;
-        text-align: left;
-        padding: 0 0.5rem;
-        margin: 0.5rem 0 0.75rem;
-        line-height: 1.5;
-      }
-      .project-tech-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.4rem;
-        justify-content: center;
-        margin-bottom: 0.75rem;
-      }
-      .project-tech-tag {
-        background: rgba(0,0,0,0.06);
-        border-radius: 999px;
-        padding: 0.2rem 0.6rem;
-        font-size: 0.72rem;
-        font-weight: 500;
-        color: #444;
-      }
-      .project-live-badge {
-        display: inline-block;
-        background: #22c55e;
-        color: #fff;
-        font-size: 0.7rem;
-        font-weight: 700;
-        padding: 0.15rem 0.6rem;
-        border-radius: 999px;
-        letter-spacing: 0.05em;
-        margin-bottom: 0.4rem;
-      }
-
-      /* ── Experience metric pills ── */
-      .metric-pills {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.4rem;
-        margin-top: 0.6rem;
-      }
-      .metric-pill {
-        background: #e8f5e9;
-        color: #2e7d32;
-        border-radius: 999px;
-        padding: 0.2rem 0.65rem;
-        font-size: 0.73rem;
-        font-weight: 600;
-      }
-
-      /* ── About stat boxes ── */
-      .stat-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.2rem;
-      }
-      .stat-number {
-        font-size: 1.6rem;
-        font-weight: 700;
-        color: #333;
-      }
-      .stat-label {
-        font-size: 0.75rem;
-        color: #777;
-        text-align: center;
-      }
-
-      /* ── Footer year fix ── */
-    </style>
-    <!-- Google tag (gtag.js) -->
+    <script defer src="script.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTCJRX9437"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -126,484 +30,352 @@
       gtag('js', new Date());
       gtag('config', 'G-TTCJRX9437');
     </script>
-    <!-- Vercel Web Analytics -->
     <script>
       window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Salman Qurban</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Salman Qurban</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- ── HERO ── -->
-    <section id="profile">
-      <div class="section__pic-container">
-        <img class="profile_pic" src="./assets/profile_pic_mine.jpg" alt="Salman Qurban profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Salman Qurban</h1>
-        <p class="section__text__p2">Software Engineer</p>
-        <p class="section__text__p3">Reisterstown, MD &nbsp;·&nbsp; U.S. Permanent Resident</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('https://drive.google.com/file/d/1oFa1nlskpIB5n-MEFyi2MpwrHcgj1IGa/view?usp=drive_link')"
-          >
-            Resume
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/salman-q-3u6'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/salman44444'"
-          />
-        </div>
-      </div>
-    </section>
+    <header class="site-header" id="top">
+      <a class="wordmark" href="#top" aria-label="Salman Qurban, home">
+        <span>SQ</span>
+        <span class="wordmark-name">Salman Qurban</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <i></i><i></i>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-cta" href="mailto:salmanqurban36@gmail.com">Let’s talk <span>↗</span></a>
+    </header>
 
-    <!-- ── ABOUT ── -->
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-              <h3>Experience</h3>
-              <p>AI/ML Engineering<br />Backend Development</p>
-            </div>
-            <div class="details-container">
-              <img src="./assets/education.png" alt="Education icon" class="icon" />
-              <h3>Education</h3>
-              <p>B.S. Computer Science<br />NLP Specialist (Codecademy)</p>
-            </div>
-          </div>
-          <!-- Quick stats row -->
-          <div class="about-containers" style="margin-top: 0.75rem;">
-            <div class="details-container stat-box">
-              <span class="stat-number">8M+</span>
-              <span class="stat-label">Pages indexed in production RAG system</span>
-            </div>
-            <div class="details-container stat-box">
-              <span class="stat-number">85%</span>
-              <span class="stat-label">Reduction in legal document review time</span>
-            </div>
-            <div class="details-container stat-box">
-              <span class="stat-number">90%</span>
-              <span class="stat-label">Research efficiency improvement</span>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I'm an AI & Software Engineer specializing in production-grade AI systems. At Neural Lines I architected
-              <strong>ShamelaGPT</strong> — a live RAG system serving queries over 8 million pages of Arabic literature — and built
-              <strong>AI Legal Document Management System</strong>, an agentic LangGraph pipeline that cut legal document review time by 85% for Hong Kong barristers.
-              I bridge ML research and backend engineering to ship tools that work in the real world.
+    <main id="main">
+      <section class="hero shell" aria-labelledby="hero-title">
+        <div class="hero-kicker reveal">
+          <span class="status-dot"></span>
+          Available for software &amp; AI engineering roles
+        </div>
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">AI / BACKEND / PRODUCT ENGINEERING</p>
+            <h1 id="hero-title">I build useful <em>AI products.</em></h1>
+            <p class="hero-summary">
+              I’m Salman, a software engineer who builds AI tools, reliable backends, and simple product experiences.
             </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#work">Explore selected work <span>↓</span></a>
+              <a
+                class="text-link"
+                href="./assets/Salman_Qurban_Resume.pdf"
+                target="_blank"
+                rel="noopener"
+              >Resume <span>↗</span></a>
+            </div>
           </div>
+
+          <aside class="hero-aside reveal" aria-label="Profile summary">
+            <div class="portrait-frame">
+              <img src="./assets/profile_pic_mine.jpg" alt="Salman Qurban" />
+              <span class="portrait-code">SQ / 01</span>
+            </div>
+            <dl class="profile-facts">
+              <div><dt>Based in</dt><dd>Maryland, USA</dd></div>
+              <div><dt>Focus</dt><dd>Production AI</dd></div>
+            </dl>
+          </aside>
         </div>
-      </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-    </section>
+      </section>
 
-    <!-- ── EXPERIENCE ── -->
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-
-      <!-- Work Experience -->
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Python Engineer</h2>
-            <h3 style="margin-bottom: 0.5rem">Neural Lines</h3>
-            <p style="margin-bottom: 1rem">Feb 2025 – Nov 2025 &nbsp;·&nbsp; Remote</p>
-            <div style="text-align: left; padding: 0 1rem">
-              <ul>
-                <li>
-                  Engineered an agentic LangGraph pipeline for an <strong>AI-powered legal document management system</strong>,
-                  automating document review and case timeline generation — reducing manual review time by 85% (2–3 weeks to 2–3 days).
-                </li>
-                <li>
-                  Built intelligent document processing using AWS Textract and Tesseract OCR to parse and segment
-                  1,000+ page legal bundles into context-specific sub-documents, achieving 90% timeline accuracy
-                  improvement with automated dispute detection.
-                </li>
-                <li>
-                  Developed a conversational AI assistant for real-time case analysis with smart document mapping,
-                  increasing lawyer productivity by 70% by eliminating manual document organization.
-                </li>
-                <li>
-                  Architected and deployed <strong>ShamelaGPT (<a href="https://shamelagpt.com" target="_blank" rel="noopener">shamelagpt.com</a>)</strong>,
-                  a production RAG system over 8 million pages of Arabic Islamic literature using AraBERT and Pinecone,
-                  improving research efficiency by 90%.
-                </li>
-                <li>
-                  Enabled multilingual semantic search and cross-lingual Q&amp;A across thousands of Islamic scholarly
-                  texts via Gemini 2.0 Flash, serving students and researchers globally.
-                </li>
-                <li><strong>Tech:</strong> FastAPI, LangChain, LangGraph, LangSmith, AWS (Textract, S3), PostgreSQL, Alembic, AraBERT, Pinecone, Gemini 2.0 Flash.</li>
-              </ul>
-              <div class="metric-pills">
-                <span class="metric-pill">↓ 85% review time</span>
-                <span class="metric-pill">↑ 90% timeline accuracy</span>
-                <span class="metric-pill">↑ 70% lawyer productivity</span>
-                <span class="metric-pill">↑ 90% research efficiency</span>
-                <span class="metric-pill">Live in production</span>
-              </div>
-            </div>
+      <section class="work-section" id="work" aria-labelledby="work-title">
+        <div class="shell section-heading reveal">
+          <div>
+            <p class="eyebrow">01 / SELECTED WORK</p>
+            <h2 id="work-title">Selected projects.</h2>
           </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Software Engineering Fellow</h2>
-            <h3 style="margin-bottom: 0.5rem">HeadStarter</h3>
-            <p style="margin-bottom: 1rem">July 2024 – Sept 2024 &nbsp;·&nbsp; Remote</p>
-            <div style="text-align: left; padding: 0 1rem">
-              <ul>
-                <li>Shipped 5 AI-powered projects in 7 weeks including a medical symptom-checking chatbot (sentence transformers + Pinecone + Llama), a spaced repetition flashcard app with AI-generated cards, and a pantry tracker with inventory intelligence.</li>
-                <li>Competed in virtual hackathons forming cross-functional teams globally, delivering scoped AI products under tight deadlines.</li>
-                <li>Attended workshops led by engineers from Google, Meta, and Amazon on scalable system design and AI product development.</li>
-                <li><strong>Tech:</strong> Next.js, LangChain, Pinecone, Llama, OpenRouter API.</li>
-              </ul>
-            </div>
-          </div>
+          <p>A few projects that show what I build and the results they create.</p>
         </div>
-      </div>
 
-      <!-- Skills — Redesigned -->
-      <div class="experience-details-container" style="margin-top: 2rem;">
-        <div class="about-containers" style="flex-direction: column; align-items: stretch;">
-          <div class="details-container" style="width: 100%;">
-            <h2 class="experience-sub-title" style="margin-bottom: 1.25rem;">Technical Skills</h2>
-            <div class="skills-grid-wrapper">
-              <div class="skill-category">
-                <h3>AI / ML</h3>
-                <div class="skill-tags">
-                  <span class="skill-tag">LangChain</span>
-                  <span class="skill-tag">LangGraph</span>
-                  <span class="skill-tag">LangSmith</span>
-                  <span class="skill-tag">RAG Pipelines</span>
-                  <span class="skill-tag">AraBERT</span>
-                  <span class="skill-tag">Pinecone</span>
-                  <span class="skill-tag">Scikit-Learn</span>
-                  <span class="skill-tag">NLTK</span>
-                  <span class="skill-tag">Sentence Transformers</span>
-                </div>
+        <article class="case-study shell reveal">
+          <div class="case-topline">
+            <span>Featured case study</span>
+            <span>Factory monitoring / 2026</span>
+          </div>
+          <div class="case-intro">
+            <div>
+              <p class="case-number">01</p>
+              <h3>AI-Powered Factory Monitoring Dashboard</h3>
+            </div>
+            <div class="case-copy">
+              <p>
+                A factory simulation that streams machine data, stops when a machine fails, and uses AI with CNC
+                manuals to explain the problem and suggest a fix.
+              </p>
+              <a
+                class="button button-light"
+                href="https://github.com/salman44444/factory-ai-dashboard"
+                target="_blank"
+                rel="noopener"
+              >View source <span>↗</span></a>
+            </div>
+          </div>
+
+          <figure class="case-hero-image">
+            <button
+              class="image-open"
+              type="button"
+              data-lightbox-caption="Live dashboard with three machine streams, sensor charts, failure states, and alerts"
+              aria-label="Open the AI-Powered Factory Monitoring Dashboard image"
+            >
+              <img
+                src="./assets/cnc-failure-lab-dashboard-fresh.jpg"
+                alt="AI-Powered Factory Monitoring Dashboard with three machine streams, live sensor charts, failure states, and alerts"
+              />
+            </button>
+          </figure>
+
+          <div class="case-details">
+            <div class="case-outcomes">
+              <p class="eyebrow">THE SYSTEM</p>
+              <div class="outcome-grid">
+                <div><strong>3</strong><span>parallel CNC machine streams</span></div>
+                <div><strong>1 sec</strong><span>synthetic telemetry cadence</span></div>
+                <div><strong>~9 sec</strong><span>manual-grounded diagnosis</span></div>
               </div>
-              <div class="skill-category">
-                <h3>Backend &amp; Cloud</h3>
-                <div class="skill-tags">
-                  <span class="skill-tag">FastAPI</span>
-                  <span class="skill-tag">PostgreSQL</span>
-                  <span class="skill-tag">Alembic</span>
-                  <span class="skill-tag">AWS Textract</span>
-                  <span class="skill-tag">AWS S3</span>
-                  <span class="skill-tag">Docker</span>
-                  <span class="skill-tag">Express.js</span>
-                  <span class="skill-tag">Node.js</span>
-                </div>
-              </div>
-              <div class="skill-category">
-                <h3>Languages</h3>
-                <div class="skill-tags">
-                  <span class="skill-tag">Python</span>
-                  <span class="skill-tag">JavaScript</span>
-                  <span class="skill-tag">SQL</span>
-                  <span class="skill-tag">C++</span>
-                </div>
-              </div>
-              <div class="skill-category">
-                <h3>Frontend &amp; Mobile</h3>
-                <div class="skill-tags">
-                  <span class="skill-tag">React</span>
-                  <span class="skill-tag">Next.js</span>
-                  <span class="skill-tag">Flutter</span>
-                  <span class="skill-tag">HTML / CSS</span>
-                </div>
-              </div>
-              <div class="skill-category">
-                <h3>Tools</h3>
-                <div class="skill-tags">
-                  <span class="skill-tag">Git</span>
-                  <span class="skill-tag">Postman</span>
-                  <span class="skill-tag">Tesseract OCR</span>
-                  <span class="skill-tag">Selenium</span>
-                  <span class="skill-tag">BeautifulSoup</span>
-                </div>
+            </div>
+            <div class="architecture-note">
+              <p class="eyebrow">HOW IT WORKS</p>
+              <p>
+                React receives live machine data through WebSockets. After a failure, LangGraph checks the final
+                readings against three CNC manuals in Pinecone and creates a clear diagnosis.
+              </p>
+              <div class="tech-row" aria-label="Technology stack">
+                <span>React</span><span>FastAPI</span><span>WebSockets</span><span>LangGraph</span><span>Pinecone</span><span>Docker</span>
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-    </section>
+          <div class="case-gallery">
+            <figure>
+              <button
+                class="image-open"
+                type="button"
+                data-lightbox-caption="Stop-on-failure replay and telemetry inspection"
+                aria-label="Open the CNC telemetry image"
+              >
+                <img src="./assets/cnc-failure-lab-telemetry-fresh.jpg" alt="Telemetry history and machine failure controls" loading="lazy" />
+              </button>
+              <figcaption><span>01</span> Stop-on-failure replay and telemetry inspection</figcaption>
+            </figure>
+            <figure>
+              <button
+                class="image-open"
+                type="button"
+                data-lightbox-caption="Manual-grounded root-cause report"
+                aria-label="Open the AI maintenance diagnosis image"
+              >
+                <img src="./assets/cnc-failure-lab-diagnosis-fresh.jpg" alt="AI maintenance diagnosis with root cause and manual references" loading="lazy" />
+              </button>
+              <figcaption><span>02</span> Manual-grounded root-cause report</figcaption>
+            </figure>
+            <figure>
+              <button
+                class="image-open"
+                type="button"
+                data-lightbox-caption="Transparent multi-agent retrieval flow"
+                aria-label="Open the LangGraph retrieval flow image"
+              >
+                <img src="./assets/cnc-failure-lab-agent-flow-fresh.jpg" alt="LangGraph retrieval and synthesis inspector" loading="lazy" />
+              </button>
+              <figcaption><span>03</span> Transparent multi-agent retrieval flow</figcaption>
+            </figure>
+          </div>
+        </article>
 
-    <!-- ── PROJECTS ── -->
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-
-          <!-- CNC Failure Lab -->
-          <article class="details-container color-container featured-project-card">
-            <div class="featured-project-layout">
-              <figure class="project-screenshot project-screenshot-main">
-                <img
-                  src="./assets/cnc-failure-lab-dashboard-fresh.jpg"
-                  alt="CNC Failure Lab dashboard showing three simulated machines, sensor trends, telemetry history, and maintenance alerts"
-                />
-                <figcaption>Live telemetry dashboard and stop-on-failure simulation</figcaption>
-              </figure>
-
-              <div class="featured-project-copy">
-                <span class="project-featured-badge">Featured AI Demo</span>
-                <h2 class="experience-sub-title project-title">CNC Failure Lab</h2>
-                <p class="project-eyebrow">Predictive Maintenance · Full-Stack AI</p>
-                <p class="project-description">
-                  Interactive demo that replays the synthetic AI4I 2020 dataset across three CNC machines, streams
-                  telemetry every second, and stops each machine at its first labeled failure. A LangGraph workflow
-                  combines the final sensor window with three Pinecone-indexed manuals to generate a grounded
-                  diagnosis and corrective-action plan.
-                </p>
-                <div class="project-proof-points" aria-label="Project highlights">
-                  <span><strong>3</strong> CNC streams</span>
-                  <span><strong>1 sec</strong> telemetry</span>
-                  <span><strong>~9 sec</strong> AI diagnosis</span>
-                </div>
-                <div class="project-tech-tags">
-                  <span class="project-tech-tag">React</span>
-                  <span class="project-tech-tag">TypeScript</span>
-                  <span class="project-tech-tag">FastAPI</span>
-                  <span class="project-tech-tag">WebSockets</span>
-                  <span class="project-tech-tag">LangGraph</span>
-                  <span class="project-tech-tag">Pinecone</span>
-                  <span class="project-tech-tag">PostgreSQL</span>
-                  <span class="project-tech-tag">Docker</span>
-                </div>
-                <div class="btn-container featured-project-actions">
-                  <button
-                    class="btn btn-color-2 project-btn"
-                    onclick="window.open('https://github.com/salman44444/factory-ai-dashboard', '_blank', 'noopener')"
-                  >
-                    View on GitHub
-                  </button>
-                </div>
-              </div>
+        <div class="shell projects-grid">
+          <article class="project-card project-card-wide reveal">
+            <div class="project-index">02</div>
+            <div class="project-body">
+              <div class="project-meta"><span>Production RAG</span><span>Live product</span></div>
+              <h3>ShamelaGPT</h3>
+              <p>
+                Search and question answering across more than eight million pages of Arabic Islamic literature.
+                AraBERT and Pinecone help users find the right passages quickly.
+              </p>
+              <div class="project-result"><strong>90%</strong><span>improvement in research efficiency</span></div>
+              <div class="tech-row"><span>AraBERT</span><span>Pinecone</span><span>LangChain</span><span>FastAPI</span></div>
+              <a class="text-link" href="https://shamelagpt.com" target="_blank" rel="noopener">Visit live product <span>↗</span></a>
             </div>
-            <div class="project-detail-gallery" aria-label="CNC Failure Lab feature screenshots">
-              <figure class="project-screenshot">
-                <img
-                  src="./assets/cnc-failure-lab-telemetry-fresh.jpg"
-                  alt="Live CNC telemetry history showing final readings before failure, playback controls, and maintenance alerts"
-                  loading="lazy"
-                />
-                <figcaption>Failure replay, final telemetry readings, and alert review workflow</figcaption>
-              </figure>
-              <figure class="project-screenshot">
-                <img
-                  src="./assets/cnc-failure-lab-diagnosis-fresh.jpg"
-                  alt="AI maintenance diagnosis showing root-cause analysis, manual cross-references, and corrective actions"
-                  loading="lazy"
-                />
-                <figcaption>Manual-grounded diagnosis and corrective-action plan</figcaption>
-              </figure>
-              <figure class="project-screenshot">
-                <img
-                  src="./assets/cnc-failure-lab-agent-flow-fresh.jpg"
-                  alt="LangGraph retrieval flow showing PostgreSQL telemetry, three Pinecone manual retrievers, and Gemini synthesis"
-                  loading="lazy"
-                />
-                <figcaption>LangGraph retrieval flow and transparent agent inspector</figcaption>
-              </figure>
+            <div class="logo-stage">
+              <img src="./assets/main_logo_without_text.jpeg" alt="ShamelaGPT logo" loading="lazy" />
+              <span class="live-pill"><i></i> LIVE</span>
             </div>
           </article>
 
-          <!-- AI Legal Document Management System -->
-          <div class="details-container color-container">
-            <h2 class="experience-sub-title project-title">AI Legal Document Management</h2>
-            <p style="font-size:0.78rem; color:#777; margin-bottom:0.4rem;">Agentic AI Pipeline · Neural Lines</p>
-            <p class="project-description">
-              LangGraph-powered system that automates legal document review, generates case timelines, and detects
-              disputed events for a major law firm. Reduced manual review time by 85% (2–3 weeks → 2–3 days),
-              improved timeline accuracy by 90%, and boosted lawyer productivity by 70%.
-            </p>
-            <div class="project-tech-tags">
-              <span class="project-tech-tag">LangGraph</span>
-              <span class="project-tech-tag">FastAPI</span>
-              <span class="project-tech-tag">AWS Textract</span>
-              <span class="project-tech-tag">PostgreSQL</span>
-              <span class="project-tech-tag">LangSmith</span>
-              <span class="project-tech-tag">Gemini 2.0</span>
+          <article class="project-card project-card-dark reveal">
+            <div class="project-index">03</div>
+            <div class="project-body">
+              <div class="project-meta"><span>Agentic AI</span><span>Private system</span></div>
+              <h3>Legal Document Management System</h3>
+              <p>
+                An AI system that reads large legal files, organizes evidence, builds case timelines, and highlights
+                disputed events for lawyers.
+              </p>
+              <div class="metric-stack">
+                <div><strong>85%</strong><span>less review time</span></div>
+                <div><strong>70%</strong><span>productivity increase</span></div>
+              </div>
+              <div class="tech-row"><span>LangGraph</span><span>Textract</span><span>PostgreSQL</span><span>Gemini</span></div>
+              <p class="project-note">Private client codebase / Neural Lines</p>
             </div>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" disabled style="opacity:0.5; cursor:not-allowed;">
-                Private Codebase
-              </button>
-            </div>
-          </div>
+          </article>
 
-          <!-- ShamelaGPT -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/main_logo_without_text.jpeg" alt="ShamelaGPT" class="project-img" />
+          <article class="project-card reveal">
+            <div class="project-index">04</div>
+            <div class="project-body">
+              <div class="project-meta"><span>NLP</span><span>Recommendation</span></div>
+              <h3>Hotel recommendation system</h3>
+              <p>
+                A recommendation tool built from 10,000+ hotel reviews. It uses review sentiment to rank hotels by
+                what travelers value.
+              </p>
+              <div class="tech-row"><span>Python</span><span>NLTK</span><span>Selenium</span><span>BeautifulSoup</span></div>
+              <div class="project-links">
+                <a class="text-link" href="https://github.com/salman44444/Authentify" target="_blank" rel="noopener">GitHub <span>↗</span></a>
+                <a class="text-link" href="https://drive.google.com/file/d/1tqxrzJHw7Qtq3dOlx0YnQo3Yzi0VJeAh/view?usp=drive_link" target="_blank" rel="noopener">Report <span>↗</span></a>
+              </div>
             </div>
-            <span class="project-live-badge">● Live</span>
-            <h2 class="experience-sub-title project-title">ShamelaGPT</h2>
-            <p style="font-size:0.78rem; color:#777; margin-bottom:0.4rem;">Arabic Literature RAG System · Neural Lines</p>
-            <p class="project-description">
-              Production RAG system over 8 million pages of the Shamela digital library. Supports multilingual
-              scholarly queries using AraBERT embeddings and Pinecone vector search, improving research
-              efficiency by 90%.
-            </p>
-            <div class="project-tech-tags">
-              <span class="project-tech-tag">AraBERT</span>
-              <span class="project-tech-tag">Pinecone</span>
-              <span class="project-tech-tag">LangChain</span>
-              <span class="project-tech-tag">FastAPI</span>
-              <span class="project-tech-tag">Gemini 2.0 Flash</span>
-            </div>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://shamelagpt.com', '_blank')"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
+          </article>
+        </div>
+      </section>
 
-          <!-- Final Year Project -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/projectre.jpg" alt="Hotel Recommendation System" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Hotel Recommendation System</h2>
-            <p style="font-size:0.78rem; color:#777; margin-bottom:0.4rem;">Final Year Project · Bahria University</p>
-            <p class="project-description">
-              Sentiment-aware recommendation engine trained on 10,000+ scraped reviews using Selenium,
-              BeautifulSoup, and NLTK for sentiment extraction and scoring.
-            </p>
-            <div class="project-tech-tags">
-              <span class="project-tech-tag">Python</span>
-              <span class="project-tech-tag">NLTK</span>
-              <span class="project-tech-tag">Selenium</span>
-              <span class="project-tech-tag">BeautifulSoup</span>
-            </div>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/salman44444/Authentify'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://drive.google.com/file/d/1tqxrzJHw7Qtq3dOlx0YnQo3Yzi0VJeAh/view?usp=drive_link'"
-              >
-                Report
-              </button>
-            </div>
+      <section class="experience-section shell" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">02 / EXPERIENCE</p>
+            <h2 id="experience-title">Where I’ve worked.</h2>
           </div>
+          <p>Experience turning AI ideas into products people can use.</p>
+        </div>
 
-          <!-- News App -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/sem.jpg" alt="News App" class="project-img" />
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-date">FEB — NOV 2025</div>
+            <div class="timeline-role">
+              <p>Neural Lines / Remote</p>
+              <h3>Python Engineer</h3>
             </div>
-            <h2 class="experience-sub-title project-title">News &amp; Media Apps</h2>
-            <p style="font-size:0.78rem; color:#777; margin-bottom:0.4rem;">Cross-platform Mobile · Flutter</p>
-            <p class="project-description">
-              Cross-platform mobile apps built in Flutter with real-time REST API integrations for live
-              news delivery and media streaming.
-            </p>
-            <div class="project-tech-tags">
-              <span class="project-tech-tag">Flutter</span>
-              <span class="project-tech-tag">REST APIs</span>
-              <span class="project-tech-tag">Dart</span>
+            <div class="timeline-copy">
+              <p>
+                Built production AI systems for legal work and Arabic research, covering document processing,
+                search, APIs, monitoring, and chat experiences.
+              </p>
+              <ul>
+                <li>Processed 1,000+ page legal bundles with Textract and Tesseract</li>
+                <li>Shipped multilingual retrieval across 8M+ indexed pages</li>
+                <li>Reduced review workflows from weeks to days</li>
+              </ul>
             </div>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/salman44444/newsproject'"
-              >
-                Github
-              </button>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">JUL — SEP 2024</div>
+            <div class="timeline-role">
+              <p>HeadStarter / Remote</p>
+              <h3>Software Engineering Fellow</h3>
             </div>
+            <div class="timeline-copy">
+              <p>
+                Built five AI products in seven weeks, including a medical assistant, AI flashcards, and an inventory
+                tool.
+              </p>
+              <ul>
+                <li>Built with Next.js, LangChain, Pinecone, and Llama</li>
+                <li>Delivered scoped products in global hackathon teams</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">JUL — SEP 2023</div>
+            <div class="timeline-role">
+              <p>Red Buffer / Islamabad</p>
+              <h3>Full Stack Intern</h3>
+            </div>
+            <div class="timeline-copy">
+              <p>
+                Worked on REST API development and testing for client projects using the MERN stack, with training in
+                backend architecture and PostgreSQL query optimization.
+              </p>
+              <ul>
+                <li>Built and tested REST API features</li>
+                <li>Worked with MERN and PostgreSQL</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="capabilities-section" id="capabilities" aria-labelledby="capabilities-title">
+        <div class="shell">
+          <div class="section-heading section-heading-light reveal">
+            <div>
+              <p class="eyebrow">03 / CAPABILITIES</p>
+              <h2 id="capabilities-title">Tools I use.</h2>
+            </div>
+            <p>From data and AI workflows to APIs and the final interface.</p>
           </div>
+          <div class="capability-grid">
+            <article class="reveal"><span>01</span><h3>AI systems</h3><p>Search, RAG, AI agents, NLP, and model testing</p><small>LangGraph · LangChain · Pinecone · Scikit-Learn · NLTK</small></article>
+            <article class="reveal"><span>02</span><h3>Backend</h3><p>APIs, databases, background tasks, and live data</p><small>Python · FastAPI · PostgreSQL · Node.js · Express.js</small></article>
+            <article class="reveal"><span>03</span><h3>Cloud &amp; data</h3><p>Document processing, OCR, storage, and deployment</p><small>AWS Textract · S3 · Tesseract · Docker · Linux</small></article>
+            <article class="reveal"><span>04</span><h3>Frontend</h3><p>Clean and responsive interfaces for web and mobile</p><small>React · TypeScript · Next.js · Flutter · HTML/CSS</small></article>
+          </div>
+        </div>
+      </section>
 
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-orb" aria-hidden="true"></div>
+        <div class="shell contact-inner reveal">
+          <p class="eyebrow">04 / CONTACT</p>
+          <h2 id="contact-title">Let’s build something useful.</h2>
+          <p>I’m open to software and AI engineering opportunities.</p>
+          <a class="contact-email" href="mailto:salmanqurban36@gmail.com">salmanqurban36@gmail.com <span>↗</span></a>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/salman-q-3u6" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="https://github.com/salman44444" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="./assets/Salman_Qurban_Resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="image-lightbox" aria-labelledby="lightbox-caption">
+      <div class="lightbox-panel">
+        <div class="lightbox-bar">
+          <span class="lightbox-label">Project image</span>
+          <span class="lightbox-count" aria-live="polite"></span>
+          <button class="lightbox-close" type="button" aria-label="Close full image">Close <span>×</span></button>
+        </div>
+        <div class="lightbox-stage">
+          <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">←</button>
+          <img class="lightbox-image" src="" alt="" />
+          <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image">→</button>
+        </div>
+        <div class="lightbox-footer">
+          <p id="lightbox-caption"></p>
+          <span>Use ← → keys to browse</span>
         </div>
       </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-    </section>
+    </dialog>
 
-    <!-- ── CONTACT ── -->
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-          <p><a href="mailto:salmanqurban36@gmail.com">salmanqurban36@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-          <p><a href="https://www.linkedin.com/in/salman-q-3u6" target="_blank" rel="noopener">LinkedIn</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img src="./assets/github.png" alt="GitHub icon" class="icon contact-icon" />
-          <p><a href="https://github.com/salman44444" target="_blank" rel="noopener">GitHub</a></p>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </n
+    <footer class="site-footer">
+      <span>© <span id="year"></span> Salman Qurban</span>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
